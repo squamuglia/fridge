@@ -6,8 +6,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "css-loader": "^1.0.0",
     "next": "^6.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "postcss-loader": "^3.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.1.0",
+    "style-loader": "^0.22.1"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.4.1"
   }
 }
