@@ -16,7 +16,7 @@ class Home extends Component {
   //   return { custom: 'custom' };
   // }
 
-  getQuestion = () => {
+  getQuestion1 = () => {
     switch (this.props.question) {
       case 0:
         return <Intro />;
@@ -32,20 +32,57 @@ class Home extends Component {
     }
   };
 
+  getQuestion2 = () => {
+    switch (this.props.question) {
+      case 1:
+        return <Intro />;
+
+      case 2:
+        return <Openness />;
+
+      case 3:
+        return <Spiciness />;
+
+      default:
+        return <div />;
+    }
+  };
+
+  getQuestion3 = () => {
+    switch (this.props.question) {
+      case 2:
+        return <Intro />;
+
+      case 3:
+        return <Openness />;
+
+      case 4:
+        return <Spiciness />;
+
+      default:
+        return <div />;
+    }
+  };
+
   render() {
     return (
       <React.Fragment>
         <Head title="Fridge Freud" />
         <Nav />
-        <div className="gutter f fw aic jcc fill abs">
+        <div className="gutter f fw aic jcc fill abs z3">
           <div className="fa x m1">
             <div className="x">
               {this.props.question}
               /10
             </div>
-            {this.getQuestion()}
+            {this.getQuestion1()}
           </div>
-          <p>{this.props.custom}</p>
+        </div>
+        <div className="gutter f fw aic jcc fill abs z2 q2">
+          <div className="fa x m1">{this.getQuestion2()}</div>
+        </div>
+        <div className="gutter f fw aic jcc fill abs z1 q3">
+          <div className="fa x m1">{this.getQuestion3()}</div>
         </div>
       </React.Fragment>
     );

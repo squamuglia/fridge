@@ -5,6 +5,12 @@
 
 .mt0, .my0, .m0 { margin-top: 0 }
 .mb0, .my0, .m0 { margin-bottom: 0 }
+.ml0, .mx0, .m0 { margin-left: 0 }
+.mr0, .mx0, .m0 { margin-right: 0 }
+.pt0, .py0, .p0 { padding-top: 0 }
+.pb0, .py0, .p0 { padding-bottom: 0 }
+.pl0, .px0, .p0 { padding-left: 0 }
+.pr0, .px0, .p0 { padding-right: 0 }
 
 .mt025, .my025, .m025 { margin-top: 0.25em }
 .mb025, .my025, .m025 { margin-bottom: 0.25em }

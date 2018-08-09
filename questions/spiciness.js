@@ -42,7 +42,7 @@ class Spiciness extends Component {
       <>
         <p className="s4">Rank the following</p>
         <ul className="f">
-          <li className="inline-block fa ac mb1 spice baby">
+          <li className="inline-block fa ac mb1 p0 spice baby">
             <input
               className="none"
               id="radio1"
@@ -56,7 +56,7 @@ class Spiciness extends Component {
               {this.state.baby}
             </label>
           </li>
-          <li className="inline-block fa ac mb1 spice ginger">
+          <li className="inline-block fa ac mb1 p0 spice ginger">
             <input
               className="none"
               id="radio2"
@@ -70,7 +70,7 @@ class Spiciness extends Component {
               {this.state.ginger}
             </label>
           </li>
-          <li className="inline-block fa ac mb1 spice posh">
+          <li className="inline-block fa ac mb1 p0 spice posh">
             <input
               className="none"
               id="radio3"
@@ -84,7 +84,7 @@ class Spiciness extends Component {
               {this.state.posh}
             </label>
           </li>
-          <li className="inline-block fa ac mb1 spice sporty">
+          <li className="inline-block fa ac mb1 p0 spice sporty">
             <input
               className="none"
               id="radio4"
@@ -98,7 +98,7 @@ class Spiciness extends Component {
               {this.state.sporty}
             </label>
           </li>
-          <li className="inline-block fa ac mb1 spice scary">
+          <li className="inline-block fa ac mb1 p0 spice scary">
             <input
               className="none"
               id="radio5"
