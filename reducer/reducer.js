@@ -4,7 +4,9 @@ const defaultState = {
   token: null,
   logged_in: false,
   username: null,
-  question: 1
+  question: 0,
+  openness: 1,
+  spiciness: 1
 };
 
 // REDUCERS
@@ -27,6 +29,18 @@ export default function reducer(state = defaultState, action) {
           question: state.question - 1
         };
       }
+
+    case 'UPDATE_OPENNESS':
+      return {
+        ...state,
+        openness: action.payload
+      };
+
+    case 'UPDATE_SPICINESS':
+      return {
+        ...state,
+        spiciness: action.payload
+      };
 
     default:
       return state;

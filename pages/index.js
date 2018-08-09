@@ -3,6 +3,7 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 import Intro from '../questions/intro';
 import Openness from '../questions/openness';
+import Spiciness from '../questions/spiciness';
 import { connect } from 'react-redux';
 
 class Home extends Component {
@@ -17,11 +18,14 @@ class Home extends Component {
 
   getQuestion = () => {
     switch (this.props.question) {
-      case 1:
+      case 0:
         return <Intro />;
 
-      case 2:
+      case 1:
         return <Openness />;
+
+      case 2:
+        return <Spiciness />;
 
       default:
         return <Intro />;
@@ -35,7 +39,10 @@ class Home extends Component {
         <Nav />
         <div className="gutter f fw aic jcc fill abs">
           <div className="fa x m1">
-            <div className="x">{this.props.question}/10</div>
+            <div className="x">
+              {this.props.question}
+              /10
+            </div>
             {this.getQuestion()}
           </div>
           <p>{this.props.custom}</p>

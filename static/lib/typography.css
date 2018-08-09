@@ -1,6 +1,6 @@
 html, body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-  font-size: 100%;
+  font-family: monospace;
+  font-size: 110%;
   line-height: 1.7;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;

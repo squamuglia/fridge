@@ -1,23 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const intro = props => (
-  <React.Fragment>
-    <p className="s4">
-      Fridge Freud uses advanced psychosexual analysis to recommend places to
-      eat.
-    </p>
-    <p className="s4">Follow the steps to discover your innermost appetites.</p>
-
-    <button className="flr" onClick={props.nextQuestion}>
-      Sure, I'm hungry >
+const PrevNext = props => (
+  <>
+    <button className="fll" onClick={props.previousQuestion}>
+      {'< Prev'}
     </button>
-  </React.Fragment>
+    <button className="flr" onClick={props.nextQuestion}>
+      Next >
+    </button>
+  </>
 );
 
 function msp(state) {
   return {
-    question: state.question
+    question: state.question,
+    openness: state.openness
   };
 }
 
@@ -25,6 +23,9 @@ function mdp(dispatch) {
   return {
     nextQuestion: () => {
       dispatch({ type: 'NEXT_QUESTION' });
+    },
+    previousQuestion: () => {
+      dispatch({ type: 'PREVIOUS_QUESTION' });
     }
   };
 }
@@ -32,4 +33,4 @@ function mdp(dispatch) {
 export default connect(
   msp,
   mdp
-)(intro);
+)(PrevNext);
